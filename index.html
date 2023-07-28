@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" href="favicon.ico" type="icon/x-image" />
+
+    <!-- Sweet Alert2 Css -->
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+
+    <!-- Sweet Alert 2 Js -->
+    <script src="sweetalert2.all.min.js"></script>
+    <title>Typing Test</title>
+  </head>
+  <body>
+    <div class="game opacity">
+      <div class="name down">Typing Speed Test</div>
+      <div class="container">
+        <div class="message down">
+          You Are Playing On
+          <span class="lvl"></span> Level & You Have
+          <span class="seconds"></span> Seconds To Type the Shown Word.
+        </div>
+        <div class="start left">Start Test</div>
+        <div class="the-word left"></div>
+        <input type="text" class="input" />
+        <div class="upcoming-words"></div>
+        <div class="control down">
+          <div class="time left">Time Left: <span></span> Seconds</div>
+          <div class="score left">
+            Score: <span class="got">0</span> From <span class="total">10</span>
+          </div>
+        </div>
+        <!-- <div class="finish"></div> -->
+      </div>
+      <div class="select-level down">
+        <p>Choose Test Level:</p>
+        <select name="select" id="select">
+          <option value="Easy" selected>Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+      </div>
+      <div class="instructions">
+        <div class="advice hard down">
+          <span class="star">*</span>Hard Level consists of <span class="words"></span> words and you should finish writing each word in <span class="seconds"></span> seconds</div>
+        <div class="advice medium left">
+          <span class="star">*</span>Medium Level consists of <span class="words"></span> words and you should finish writing each word in <span class="seconds"></span> seconds</div>
+        <div class="advice easy down">
+          <span class="star">*</span>Easy Level consists of <span class="words"></span> words and you should finish writing each word in <span class="seconds"></span> seconds</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
